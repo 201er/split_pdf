@@ -1,0 +1,19 @@
+[project]
+name = "split-pdf"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "fedcba499", email = "fedcba4991@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "pypdf>=6.21.0",
+]
+
+[project.scripts]
+split-pdf = "split_pdf:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
